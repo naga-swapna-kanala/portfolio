@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The 56% credited to the wrong channel | Naga Swapna Kanala</title>
+<meta name="description" content="Rebuilding revenue attribution at the Fine Arts Museums of San Francisco: $3.5M reattributed across membership, ticketing, and donations, the museum's first Snowflake ELT pipeline, and source verification moved to the moment of capture.">
+<link rel="canonical" href="https://swapna-kanala.vercel.app/work/revenue-attribution">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="The 56% credited to the wrong channel">
+<meta property="og:description" content="$3.5M reattributed, the museum's first ELT pipeline, and attribution that stays right without a person in the loop.">
+<meta property="og:url" content="https://swapna-kanala.vercel.app/work/revenue-attribution">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b6e64" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+
+<script>
+(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;560;600;620;680&family=Newsreader:ital,wght@0,400;0,420;0,500;1,420&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="brand" href="/">
+      <span class="brand__mark" aria-hidden="true">SK</span>
+      <span>Swapna Kanala</span>
+      <span class="brand__role">Revenue &amp; Data Analytics</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul class="navlinks">
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#approach">Approach</a></li>
+        <li><a href="/#record">Experience</a></li>
+        <li><a href="/#toolkit">Toolkit</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="themetoggle" type="button" data-theme-toggle aria-label="Switch theme">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="casehero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        <span>Revenue attribution</span>
+      </nav>
+
+      <div class="casehero__meta">
+        <strong>Fine Arts Museums of San Francisco</strong>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="todo" data-todo="Title must match LinkedIn word for word." data-where="Page header">Data Analyst (Practicum)</span>
+        <span class="sep" aria-hidden="true">•</span>
+        <span>Aug 2025 - Jul 2026</span>
+      </div>
+
+      <h1 class="casehero__h1">The 56% that was credited to the wrong channel</h1>
+
+      <p class="casehero__lede">
+        Two museums, one Salesforce org, and a marketing budget being allocated on channel numbers
+        that had never been audited. I rebuilt multi-touch attribution across $3.5M of membership,
+        ticketing, and donation revenue, and then did the part that actually mattered: made the
+        number stay right without anyone maintaining it.
+      </p>
+
+      <div class="glance">
+        <div class="glance__cell">
+          <div class="glance__k">Context</div>
+          <div class="glance__v">Year-long analytics practicum at a two-site museum institution with no dedicated data or IT support</div>
+        </div>
+        <div class="glance__cell">
+          <div class="glance__k">My role</div>
+          <div class="glance__v">Sole analyst. Scoped it, built it, and presented it to executive stakeholders</div>
+        </div>
+        <div class="glance__cell">
+          <div class="glance__k">Stack</div>
+          <div class="glance__v">Salesforce, Snowflake, SQL, Python, Tableau, Gemini API</div>
+        </div>
+        <div class="glance__cell">
+          <div class="glance__k">Headline</div>
+          <div class="glance__v">$3.5M reattributed, 56% legacy misattribution corrected, executive reporting from 15 hours a week to 2</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="casebody">
+    <div class="wrap">
+
+      <p class="kicker">
+        A museum's revenue does not arrive the way a CRM expects it to. Someone buys a ticket for an
+        exhibition they saw on a bus shelter, comes back three months later on a friend's
+        recommendation, converts to a membership at the admissions desk, and becomes a donor two
+        years after that. Standard campaign attribution logic sees a fraction of that. It fills in
+        the rest with whatever touch happens to be attached to the record.
+      </p>
+
+      <h2>The problem I was handed, and the one I found</h2>
+
+      <p>
+        I was brought in to build executive reporting. The institution had never had an analytics
+        function, so reporting meant someone pulling numbers by hand each week: roughly
+        <strong>15 hours</strong> of assembly before anyone could look at a trend. That was the
+        stated problem.
+      </p>
+
+      <p>
+        The real problem showed up while I was validating the source data. Channel performance, the
+        number that decided where marketing spend went, did not survive scrutiny. A large share of
+        real-world acquisition arrived through paths that bypassed the standard CRM campaign logic
+        entirely, and those conversions were not going uncredited. They were being credited to
+        whichever channel the logic could see.
+      </p>
+
+      <p>
+        So the institution was not flying blind. It was flying on instruments that were confidently
+        pointing the wrong way, which is worse, because nobody had a reason to doubt them.
+      </p>
+
+      <figure class="fig">
+        <div class="fig__h">Where conversions were being credited, before and after the rewrite</div>
+        <div class="fig__sub">Across membership, ticketing, and donation revenue in the historical record</div>
+        <div class="fig__body">
+          <div class="splitrow">
+            <div class="splitrow__k">Legacy multi-touch model</div>
+            <div class="split" role="img" aria-label="In the legacy model, 56 percent of conversions were credited to the wrong channel and 44 percent were credited correctly.">
+              <div class="split__seg" data-s2 style="flex:56">56% wrong channel</div>
+              <div class="split__seg" data-s1 style="flex:44">44% correct</div>
+            </div>
+          </div>
+          <div class="splitrow">
+            <div class="splitrow__k">After the rewrite and batch correction</div>
+            <div class="split" role="img" aria-label="After the rewrite, conversions in the corrected historical record are attributed to their resolved source.">
+              <div class="split__seg" data-ok style="flex:100">Attributed to resolved source</div>
+            </div>
+          </div>
+          <ul class="legend">
+            <li><span class="swatch" style="background:var(--series-2)" aria-hidden="true"></span> Credited to the wrong channel</li>
+            <li><span class="swatch" style="background:var(--series-1)" aria-hidden="true"></span> Credited correctly</li>
+            <li><span class="swatch" style="background:var(--accent)" aria-hidden="true"></span> Resolved source after correction</li>
+          </ul>
+        </div>
+        <figcaption>
+          The 56% figure is the share of conversions whose credited channel changed once the model
+          was rewritten and the unstructured source data was resolved. It is a correction rate, not
+          an error bar on the revenue total.
+        </figcaption>
+      </figure>
+
+      <h2>What I built</h2>
+
+      <p>
+        Fixing the history and fixing the future are two different jobs, and the second one is the
+        one that lasts. I did both, in this order.
+      </p>
+
+      <ol class="steps">
+        <li>
+          <div>
+            <b>The museum's first ELT pipeline</b>
+            <span>
+              No dedicated IT support, so I architected and built it: 1.2M Salesforce accounts and
+              over 100K won opportunities ingested into Snowflake, on a schedule, with the warehouse
+              as the place analysis actually happens instead of a stack of exports.
+            </span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Identity resolution in SQL</b>
+            <span>
+              Attribution is meaningless if one human being is four account records. I deduplicated
+              the account base in SQL so that a visitor's ticket purchase, membership, and gift
+              resolved to the same person before any model touched them.
+            </span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>A rewritten multi-touch attribution model</b>
+            <span>
+              Rebuilt over membership, ticketing, and donation revenue together rather than as three
+              separate funnels, because at this institution they are one relationship at different
+              stages.
+            </span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>An AI agent for the data rules could not reach</b>
+            <span>
+              The marketing source data that bypassed CRM logic was unstructured, which is exactly
+              why rule-based logic had failed on it. I built an agent to resolve it, ran it in batch
+              over Snowflake to correct the legacy record, and validated its output with a Python
+              workflow rather than trusting it.
+            </span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Verification moved to the moment of capture</b>
+            <span>
+              Then I deployed the agent natively in Salesforce, where it investigates and verifies
+              each new campaign member's true source <em>before</em> the conversion is recorded. This
+              is the part I care about: the backfill was a one-time cleanup, this is why the number
+              does not drift back.
+            </span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <b>Tableau KPI dashboards on top</b>
+            <span>
+              Published on the Snowflake models so executives read the same corrected numbers I did.
+              Weekly reporting went from roughly 15 hours of assembly to about 2 hours of
+              maintenance.
+            </span>
+          </div>
+        </li>
+      </ol>
+
+      <div class="insight">
+        <div class="insight__k">The thing worth taking away</div>
+        <p>
+          The misattribution was not a bug. It was standard CRM logic meeting real acquisition
+          behavior and quietly filling the gap. Backfilling the history gets you a better slide;
+          moving verification to the moment of capture is what keeps the slide true next quarter.
+        </p>
+      </div>
+
+      <h2>Results</h2>
+
+      <div class="results">
+        <div class="res">
+          <div class="res__n">$3.5M</div>
+          <div class="res__l">Membership, ticketing, and donation revenue reattributed to the channels that earned it</div>
+        </div>
+        <div class="res">
+          <div class="res__n">56%</div>
+          <div class="res__l">Legacy misattribution rate exposed and corrected</div>
+        </div>
+        <div class="res">
+          <div class="res__n">15 → 2</div>
+          <div class="res__l">Hours a week on executive reporting, assembly replaced by maintenance</div>
+        </div>
+        <div class="res">
+          <div class="res__n">1.2M</div>
+          <div class="res__l">Accounts unified and deduplicated for identity resolution</div>
+        </div>
+      </div>
+
+      <h2>What changed once the numbers were right</h2>
+
+      <p>
+        Corrected attribution is only interesting if somebody spends differently because of it. A
+        three-year purchase analysis showed the pattern the old numbers had hidden: acquisition
+        campaigns had drifted away from lapsed members toward cold ticket buyers, which explained a
+        one-year collapse in membership acquisition ROI that nobody had been able to account for.
+      </p>
+
+      <p>
+        We relaunched win-back campaigns against the population the data actually pointed at.
+      </p>
+
+      <figure class="fig">
+        <div class="fig__h">Win-back campaign conversion, before and after retargeting lapsed members</div>
+        <div class="fig__body">
+          <div class="bars">
+            <div>
+              <div class="bar__top"><span class="bar__label">Prior acquisition campaigns</span><span class="bar__val">1.5%</span></div>
+              <div class="bar__track"><div class="bar__fill" style="width:12.5%"></div></div>
+            </div>
+            <div>
+              <div class="bar__top"><span class="bar__label">Relaunched win-back campaigns</span><span class="bar__val">12%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-accent style="width:100%"></div></div>
+            </div>
+          </div>
+        </div>
+        <figcaption>Over 1,800 members re-enrolled through the relaunched campaigns.</figcaption>
+      </figure>
+
+      <h2>Also at FAMSF</h2>
+
+      <p>
+        The attribution rebuild was the spine of the year, but it was not the only thing. These were
+        separate work streams on the same foundation, not downstream effects of the attribution fix.
+      </p>
+
+      <ul class="bullets">
+        <li>
+          <strong>Retention and churn modeling.</strong> Segmented every account in the CRM and built
+          models predicting who would lapse and who would upgrade, then routed high churn-risk
+          members into targeted renewal sequences and engaged multi-year members into donor upgrade
+          campaigns. Member retention improved <strong>6 points</strong>; donor churn fell
+          <strong>15%</strong>.
+        </li>
+        <li>
+          <strong>Checkout experimentation.</strong> Identified which channels produced members with
+          the highest lifetime value, then A/B tested checkout messaging and pricing tiers with the
+          marketing and membership teams across four exhibition seasons. Checkout conversion rose
+          <strong>18%</strong>, adding over <strong>2,500</strong> high-LTV members and first-time
+          donors.
+        </li>
+        <li>
+          <strong>Ticketing as a sales funnel.</strong> Applied drop-off analysis to the B2C online
+          checkout and built an agent that enriched inbound group sales leads with external web data
+          to score and prioritize high-value B2B buyers. Ticket revenue grew <strong>11%</strong>
+          across both museum locations.
+        </li>
+        <li>
+          <strong>An A/B test tracking framework</strong> so experiment results were recorded
+          consistently instead of living in whoever ran the test's notes.
+        </li>
+      </ul>
+
+      <h2>What I would do differently <span class="todo-pin" data-todo="This section was written for you from the facts on file, so it is the least verified part of the page. Edit it until it is what you actually think, or tell me the real lesson and I will rewrite it. Interviewers follow up on exactly this." data-where="Reflection section">written for you</span></h2>
+
+      <p>
+        I built the batch correction first and the capture-time verification second, because the
+        backfill was what stakeholders had asked for and it was the faster win. In hindsight I would
+        argue harder for reversing that order. Every week the verification step did not exist was
+        another week of new records arriving with the same defect, and the batch job had to be rerun
+        over a moving target. The cleanup is the visible deliverable; the intake control is the one
+        that decides whether you ever have to do the cleanup again.
+      </p>
+
+      <p>
+        The other thing I underweighted: I validated the agent's output against a Python workflow,
+        which was right, but I did not build a standing monitor on its resolution rate. If its
+        accuracy degraded six months after I left, nothing would have raised a hand.
+      </p>
+
+      <div class="note">
+        <strong>On the data.</strong> This write-up describes the work, the methods, and the outcomes
+        I measured. It contains no constituent, donor, or member data, and no figures beyond the
+        aggregate results reported to the institution. The practicum has ended and I no longer have
+        access to the underlying data, so nothing here is reproducible from a public dataset.
+      </div>
+
+    </div>
+  </section>
+
+  <section class="band band--tight band--sunk">
+    <div class="wrap">
+      <div class="eyebrow">Next</div>
+      <div class="nextcase">
+        <a href="/work/compliance-screening">
+          <div class="k">Accenture</div>
+          <div class="t">Account clearance from days to under four hours</div>
+          <div class="o">Real-time screening on Salesforce, and the false-positive problem underneath it</div>
+        </a>
+        <a href="/work/quote-to-order">
+          <div class="k">Tata Consultancy Services</div>
+          <div class="t">Excel quotes to rule-driven CPQ, and a $150M pipeline you could forecast</div>
+          <div class="o">Five years on one quote-to-order platform, in two halves</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span>© 2026 Naga Swapna Kanala</span>
+    <span>
+      <a href="mailto:naga.swapna.kanala@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/naga-swapna-kanala" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

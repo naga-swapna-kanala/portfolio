@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Excel quotes to rule-driven CPQ, and a $150M pipeline | Naga Swapna Kanala</title>
+<meta name="description" content="Five years on one telecom quote-to-order platform: order automation that cut failures from over 50% to 5%, a reconciliation that found $1M in unbilled revenue, a CPQ migration that cut quote errors 35%, and a weighted forecast for a $150M pipeline.">
+<link rel="canonical" href="https://swapna-kanala.vercel.app/work/quote-to-order">
+<meta name="robots" content="index, follow">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="Excel quotes to rule-driven CPQ, and a $150M pipeline">
+<meta property="og:description" content="First I built the rails. Then I ran the motion on top of them.">
+<meta property="og:url" content="https://swapna-kanala.vercel.app/work/quote-to-order">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0b6e64" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+
+<script>
+(function(){try{var t=localStorage.getItem("theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}}catch(e){}})();
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;540;560;600;620;680&family=Newsreader:ital,wght@0,400;0,420;0,500;1,420&display=swap">
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="masthead">
+  <div class="wrap masthead__inner">
+    <a class="brand" href="/">
+      <span class="brand__mark" aria-hidden="true">SK</span>
+      <span>Swapna Kanala</span>
+      <span class="brand__role">Revenue &amp; Data Analytics</span>
+    </a>
+    <nav aria-label="Sections">
+      <ul class="navlinks">
+        <li><a href="/#work">Work</a></li>
+        <li><a href="/#approach">Approach</a></li>
+        <li><a href="/#record">Experience</a></li>
+        <li><a href="/#toolkit">Toolkit</a></li>
+        <li><a href="/#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="themetoggle" type="button" data-theme-toggle aria-label="Switch theme">
+      <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>
+    </button>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="casehero">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb">
+        <a href="/">Home</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        <span>Quote-to-order</span>
+      </nav>
+
+      <div class="casehero__meta">
+        <strong>Tata Consultancy Services</strong>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="todo" data-todo="Both TCS titles must match LinkedIn." data-where="Page header">Salesforce CPQ Developer, then Sales Operations Analyst</span>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="todo" data-todo="Client kept anonymous on purpose. Name it only if you are comfortable with that on a public page." data-where="Page header">Telecom client</span>
+        <span class="sep" aria-hidden="true">•</span>
+        <span class="todo" data-todo="The split between the two roles (May 2018) exists in three versions across your files. Confirm against LinkedIn; the year boundaries in the section headings below follow it." data-where="Page header">Jun 2016 - Oct 2021</span>
+      </div>
+
+      <h1 class="casehero__h1">Excel quotes to rule-driven CPQ, and a $150M pipeline you could forecast</h1>
+
+      <p class="casehero__lede">
+        Five years on one quote-to-order and order-orchestration platform, in two distinct halves.
+        First I built the rails: order automation, a reconciliation that found a million dollars
+        nobody had billed, and the CPQ configuration behind every new product launch. Then I moved
+        onto the rails and ran the sales operating cadence on top of them.
+      </p>
+
+      <div class="glance">
+        <div class="glance__cell">
+          <div class="glance__k">Context</div>
+          <div class="glance__v">Enterprise telecom quote-to-order platform: complex bundles, provisioning, and a separate billing system that had to agree with the CRM</div>
+        </div>
+        <div class="glance__cell">
+          <div class="glance__k">My role</div>
+          <div class="glance__v">Built the quoting and order automation as a CPQ developer, then owned quoting, discount governance, and the forecast as a sales operations analyst</div>
+        </div>
+        <div class="glance__cell">
+          <div class="glance__k">Stack</div>
+          <div class="glance__v">Salesforce CPQ, Apex, Flows, SQL, Snowflake, Tableau, advanced Excel</div>
+        </div>
+        <div class="glance__cell">
+          <div class="glance__k">Headline</div>
+          <div class="glance__v">Order failures from over 50% to about 5%, $1M unbilled revenue found, quote errors down 35%, forecast variance inside 10%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="casebody">
+    <div class="wrap">
+
+      <p class="kicker">
+        Enterprise telecom quoting is where pricing logic goes to be tested. A single deal can carry a
+        broadband circuit, a managed router, an installation charge, a promotional discount that
+        applies to two of those three, and a contract term that changes all of it. Every one of those
+        lines has to survive the trip from quote to order to provisioning to invoice. When it does
+        not, nobody notices until a customer does.
+      </p>
+
+      <h2>Act I: building the rails, 2016 to 2018</h2>
+
+      <h3>Orders that failed more often than they succeeded</h3>
+
+      <p>
+        Orders were being created by hand after a deal closed, and I could not get a straight answer
+        on how often that went wrong, so I went to the order and billing data to find out. The failure
+        rate on manual order creation was <strong>over 50%</strong>. Half of the handoffs between a
+        won deal and a fulfillable order were breaking, and the breakage was absorbed as rework
+        rather than recorded as a defect.
+      </p>
+
+      <p>
+        I automated the opportunity-to-order handoff in Salesforce so orders were generated at
+        opportunity closure, from the configured quote, rather than retyped from it. Failures fell to
+        roughly <strong>5%</strong>.
+      </p>
+
+      <figure class="fig">
+        <div class="fig__h">Order creation failure rate</div>
+        <div class="fig__sub">Manual creation versus automated generation at opportunity closure</div>
+        <div class="fig__body">
+          <div class="bars">
+            <div>
+              <div class="bar__top"><span class="bar__label">Manual order creation</span><span class="bar__val">over 50%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-s2 style="width:100%"></div></div>
+            </div>
+            <div>
+              <div class="bar__top"><span class="bar__label">Automated at opportunity closure</span><span class="bar__val">≈5%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-accent style="width:10%"></div></div>
+            </div>
+          </div>
+          <ul class="legend">
+            <li><span class="swatch" style="background:var(--series-2)" aria-hidden="true"></span> Before</li>
+            <li><span class="swatch" style="background:var(--accent)" aria-hidden="true"></span> After</li>
+          </ul>
+        </div>
+        <figcaption>Lower is better. Bars are drawn relative to the pre-automation rate.</figcaption>
+      </figure>
+
+      <h3>The million dollars that was assumed billed</h3>
+
+      <p>
+        The order automation raised an uncomfortable question. If the handoff had been failing half
+        the time for years, what had happened to the orders that failed quietly? I ran a quote-to-cash
+        reconciliation in Snowflake, using SQL to match provisioned orders in the CRM against billed
+        orders in the billing system, on the assumption that the two populations should be identical.
+      </p>
+
+      <p>
+        They were not. About <strong>$1M</strong> of revenue had been provisioned and delivered to
+        customers but never billed for. I walked the exceptions through Finance, Fulfillment, and
+        Sales Operations to confirm each one was real rather than a matching artifact, then built
+        re-push automation to send the validated orders back through to billing.
+        <strong>$600K</strong> was recovered within 60 days.
+      </p>
+
+      <div class="insight">
+        <div class="insight__k">The thing worth taking away</div>
+        <p>
+          A reconciliation is just two systems that ought to agree, and asking why they do not. It is
+          the least glamorous query I know how to write and it has found more money than anything
+          else I have built.
+        </p>
+      </div>
+
+      <h3>Owning the systems side of product launches</h3>
+
+      <p>
+        Every new plan and bundle Marketing and Product designed had to exist in the quoting system
+        before a rep could sell it. That was mine: product records, price book entries, bundle
+        structures with option constraints, and price rules in Salesforce CPQ, for
+        <strong>30+ new plans and bundles</strong> across <strong>15+ launches</strong>, each
+        delivered on the launch date Marketing and Product had already committed to publicly.
+      </p>
+
+      <p>
+        The part that kept invoices correct was less visible: mapping each new SKU to its billing
+        charge code, so a promotional bundle, discounted enterprise broadband with a managed router,
+        say, quoted <em>and</em> invoiced correctly from launch day rather than being discovered as a
+        billing defect in month two.
+      </p>
+
+      <p>
+        I also said no a fair amount. When a pricing or packaging design could not be quoted or billed
+        as specified, I pushed back and brought a configurable alternative instead of shipping
+        something that would break downstream. That is easier to do when you can show the mechanism
+        rather than just object.
+      </p>
+
+      <h2>Act II: running the motion, 2018 to 2021</h2>
+
+      <h3>The Proposal stage where deals went to sit</h3>
+
+      <p>
+        Pipeline analysis kept surfacing the same shape: deals stalling at Proposal. The cause was not
+        rep behavior. Quotes were still being assembled in legacy Excel workbooks, which meant every
+        non-standard configuration was a manual build, and every manual build was a chance to pick the
+        wrong product.
+      </p>
+
+      <p>
+        I investigated the pricing and SKU data first to find and remove the product-selection
+        anomalies, because migrating bad reference data into a new system just relocates the problem.
+        Then I worked with Sales, Product, Finance, and IT to move quoting into Salesforce CPQ with
+        rule-driven product and pricing configuration, and trained the sales team on it.
+      </p>
+
+      <div class="results">
+        <div class="res">
+          <div class="res__n">35%</div>
+          <div class="res__l">Fewer quote errors after the CPQ migration</div>
+        </div>
+        <div class="res">
+          <div class="res__n">Days → min</div>
+          <div class="res__l">Time to produce a quote</div>
+        </div>
+      </div>
+
+      <h3>Discount governance, so margin stopped leaking one exception at a time</h3>
+
+      <p>
+        Non-standard enterprise deals were approved case by case, which meant the approval bar moved
+        depending on who was asked. I profiled the actual discount patterns in the historical data
+        first, then used that to set approval criteria, thresholds, and escalation paths in approval
+        matrices, so the rule reflected how the business really priced rather than what anyone
+        believed about it. Pricing exceptions fell <strong>20%</strong> and contract margins held.
+      </p>
+
+      <h3>A forecast leadership could plan against</h3>
+
+      <p>
+        I owned the weighted forecast model for a <strong>$150M pipeline</strong> across four regions
+        and 60+ reps, derived from historical win rates and stage velocity rather than from rep
+        confidence. A model alone would not have held, though, because a forecast is only as good as
+        the pipeline data underneath it. So the model came with a weekly hygiene inspection against
+        stage exit criteria and validation rules, flagging stale opportunities, incomplete data, and
+        deals overdue in stage.
+      </p>
+
+      <p>
+        Quarterly forecast variance came down from <strong>15% to within 10%</strong>.
+      </p>
+
+      <figure class="fig">
+        <div class="fig__h">Quarterly forecast variance</div>
+        <div class="fig__body">
+          <div class="bars">
+            <div>
+              <div class="bar__top"><span class="bar__label">Before</span><span class="bar__val">15%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-s2 style="width:100%"></div></div>
+            </div>
+            <div>
+              <div class="bar__top"><span class="bar__label">After</span><span class="bar__val">within 10%</span></div>
+              <div class="bar__track"><div class="bar__fill" data-accent style="width:66%"></div></div>
+            </div>
+          </div>
+          <ul class="legend">
+            <li><span class="swatch" style="background:var(--series-2)" aria-hidden="true"></span> Before</li>
+            <li><span class="swatch" style="background:var(--accent)" aria-hidden="true"></span> After</li>
+          </ul>
+        </div>
+        <figcaption>Lower is better. Bars are drawn relative to the prior variance.</figcaption>
+      </figure>
+
+      <h3>The weekly top-deals review</h3>
+
+      <p>
+        I ran it for sales leadership across all four regions, and the value was in the preparation
+        rather than the meeting. Each deal got a card showing last activity, close-date pushes, and
+        approval status, which turns "how are we tracking" into a specific conversation about specific
+        deals.
+      </p>
+
+      <p>
+        In one quarter that cadence surfaced <strong>$3M of at-risk commit six weeks before quarter
+        end</strong>, while there was still time to act on it. Slippage fell <strong>40%</strong>.
+      </p>
+
+      <h3>The rest of the operating layer</h3>
+
+      <ul class="bullets">
+        <li>
+          <strong>Self-serve sales performance dashboards</strong> in Salesforce and Tableau on
+          pipeline coverage, stage conversion, win rate, and opportunity aging, built for reps and
+          managers rather than only for leadership, so coverage gaps and conversion drops were visible
+          between reviews instead of at them. Follow-up efficiency improved <strong>15%</strong>.
+        </li>
+        <li>
+          <strong>Customer master data governance</strong> in Salesforce: account hierarchies of
+          parent and child accounts, contact roles, and partner relationships, alongside account and
+          opportunity onboarding and screening. Unglamorous, and the reason the hierarchy-dependent
+          reporting above could be trusted.
+        </li>
+      </ul>
+
+      <h2>Results</h2>
+
+      <div class="results">
+        <div class="res">
+          <div class="res__n">50% → 5%</div>
+          <div class="res__l">Order creation failure rate</div>
+        </div>
+        <div class="res">
+          <div class="res__n">$1M</div>
+          <div class="res__l">Unbilled revenue uncovered; $600K recovered in 60 days</div>
+        </div>
+        <div class="res">
+          <div class="res__n">35%</div>
+          <div class="res__l">Fewer quote errors; time to quote from days to minutes</div>
+        </div>
+        <div class="res">
+          <div class="res__n">20%</div>
+          <div class="res__l">Fewer pricing exceptions after discount governance</div>
+        </div>
+        <div class="res">
+          <div class="res__n">15% → 10%</div>
+          <div class="res__l">Quarterly forecast variance on a $150M pipeline</div>
+        </div>
+        <div class="res">
+          <div class="res__n">$3M</div>
+          <div class="res__l">At-risk commit surfaced six weeks before quarter end; slippage down 40%</div>
+        </div>
+        <div class="res">
+          <div class="res__n">30+</div>
+          <div class="res__l">Plans and bundles configured across 15+ launches, on committed dates</div>
+        </div>
+        <div class="res">
+          <div class="res__n">15%</div>
+          <div class="res__l">Better follow-up efficiency from self-serve dashboards</div>
+        </div>
+      </div>
+
+      <h2>What I would do differently <span class="todo-pin" data-todo="This section was written for you from the facts on file, so it is the least verified part of the page. Edit it until it is what you actually think, or tell me the real lesson and I will rewrite it." data-where="Reflection section">written for you</span></h2>
+
+      <p>
+        The CPQ migration's weakest link was adoption, and I treated training as the answer to it. It
+        mostly was, but reps who had built quotes in Excel for years had workarounds I only learned
+        about months later, usually when a strange configuration appeared in the data. If I ran the
+        migration again I would sit with the three highest-volume quoters for a day each
+        <em>before</em> designing the rules, not after, because their workarounds were requirements
+        I had not been told about.
+      </p>
+
+      <p>
+        On the forecast: I tuned it toward accuracy at the quarter level, which is what I was
+        measured on. Leadership repeatedly wanted to ask a different question, what happens if this
+        region slips, and my model could not answer that cleanly. I would build scenario branches in
+        from the start rather than bolting on one-off what-if analyses each time the question came up.
+      </p>
+
+      <div class="note">
+        <strong>On confidentiality.</strong> This was client work under contract. The telecom client,
+        the billing platform, and internal system names are omitted, as are pricing, discount
+        thresholds, and product specifics. All figures are the aggregate results measured and reported
+        internally at the time.
+      </div>
+
+    </div>
+  </section>
+
+  <section class="band band--tight band--sunk">
+    <div class="wrap">
+      <div class="eyebrow">Next</div>
+      <div class="nextcase">
+        <a href="/work/revenue-attribution">
+          <div class="k">Fine Arts Museums of San Francisco</div>
+          <div class="t">The 56% that was credited to the wrong channel</div>
+          <div class="o">$3.5M reattributed, and verification moved to the moment of capture</div>
+        </a>
+        <a href="/work/compliance-screening">
+          <div class="k">Accenture</div>
+          <div class="t">Account clearance from days to under four hours</div>
+          <div class="o">Real-time screening on Salesforce, and the false-positive problem underneath it</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span>© 2026 Naga Swapna Kanala</span>
+    <span>
+      <a href="mailto:naga.swapna.kanala@gmail.com">Email</a> ·
+      <a href="https://www.linkedin.com/in/naga-swapna-kanala" target="_blank" rel="noopener">LinkedIn</a>
+    </span>
+  </div>
+</footer>
+
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
