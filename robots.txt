@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://swapna-kanala.vercel.app/sitemap.xml
